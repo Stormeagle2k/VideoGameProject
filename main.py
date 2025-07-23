@@ -1,24 +1,33 @@
 import pygame
 from pygame.locals import *
 import sys
+from character import HopCube
+from background import Background
  
 pygame.init()
 window = pygame.display.set_mode((800, 800))
 pygame.display.set_caption(title='Square Hop')
 
-bground = pygame.image.load('PixelCaveArt2.png')
-
 FPS = pygame.time.Clock()
 FPS.tick(30)
+
+
+bground = Background('PixelCaveArt2.png', [0,0])
+
+player = HopCube()
 
 # This keeps the game open. Press backspace to close.
 run = True
 while run:
-    window.blit(bground, (0,0))
-    for e in pygame.event.get():
-        if e.type == QUIT or (e.type == KEYDOWN and e.key == K_BACKSPACE):
+    for event in pygame.event.get():
+        if event.type == QUIT or (event.type == KEYDOWN and event.key == K_BACKSPACE):
             run = False
 
     
+    window.fill([255, 255, 255])
+    window.blit(bground.image, bground.rect)
+    window.blit(player.surf, [0,0], )
+    
+    pygame.display.flip()
     pygame.display.update()
 
