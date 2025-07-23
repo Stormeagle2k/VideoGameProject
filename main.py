@@ -3,6 +3,11 @@ from pygame.locals import *
 import sys
 from character import HopCube
 from background import Background
+
+
+class Game():
+    def __init__(self):
+        pass
  
 pygame.init()
 window = pygame.display.set_mode((800, 800))
