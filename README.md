@@ -1,5 +1,5 @@
 Features:
-Dash(a short dash witht he spacebar)
+Dash(a short dash with the spacebar)
 Jumping(W key)
 Left-Right Movement(WAD keys)
 Side-scrolling
