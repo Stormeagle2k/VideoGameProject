@@ -1,0 +1,7 @@
+Make a maze game using the movement to navigate the maze
+Have the background change with each level. 
+Have the ability to cange the texture, and color of cube. 
+Use DND grid templates to make the mazes. 
+Add background music depending on the maze background.
+Add a timer and time limit. 
+Add Bronze, Silver, and Gold Trophy depending on how quikly the maze is completed. 

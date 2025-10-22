@@ -28,6 +28,9 @@ while run:
             
     player.left(event)
     player.right(event)
+    player.down(event)
+    player.up(event)
+    player.downleft(event)
     player.update()
     player.rect.clamp_ip(window_rect)
     # print(player.rect.x)
